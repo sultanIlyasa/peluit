@@ -1,0 +1,514 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: calc(100vh);
+  position: relative;
+  overflow-x: hidden;
+}
+
+body:after {
+  content: " ";
+  display: block;
+  height: 508px;
+}
+
+@media (min-width: 768px) {
+  body:after {
+    content: " ";
+    display: block;
+    height: 238px;
+  }
+}
+
+.cont-h-100 {
+  min-height: calc(100vh - 57.6px - 238px);
+}
+
+.paper-bg {
+  background-image: url("../public/BG-01\ 1.png");
+  background-size: cover;
+}
+
+.paper-bg2 {
+  background-image: url("../public/BG-01\ 1.png");
+  background-size: cover;
+}
+
+.btn.btn-primary {
+  background-color: #333533;
+  color: blue;
+  border: 1px solid blue;
+}
+
+.btn.btn-secondary {
+  background-color: white;
+  color: #faf8d4;
+}
+
+div.input-group .input-group-text {
+  background-color: #333533;
+  color: #faf8d4;
+}
+
+table.table {
+  padding: 4px;
+}
+
+/* navbar */
+nav .nav-link,
+nav .btn-pilih a {
+  color: blue;
+}
+
+nav .navbar-brand{
+  color: #000;
+}
+
+nav .navbar-brand:hover,
+nav .nav-link:hover {
+  color: white;
+  font-weight: 500;
+}
+
+nav .nav-link.active,
+nav .dropdown-toggle.show {
+  color: #ffff;
+  font-weight: 600;
+}
+
+nav .btn-pilih a,
+nav .navbar-toggler {
+  border: 1px solid blue;
+}
+
+nav .btn-pilih a:hover {
+  border: 1px solid #faf8d4;
+  background-color: #faf8d4;
+  color: black;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250,248,212, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-bg {
+  background-image: url("../public/BG-01\ 1.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.collapse-bg {
+  background-image: url("../public/BG-01\ 1.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.dropdown-menu.show {
+  background-color: #333533;
+}
+
+.dropdown-menu.show .dropdown-item {
+  color: #faf8d4;
+}
+
+.dropdown-menu.show .dropdown-item:hover,
+.dropdown-menu.show .dropdown-item.active {
+  color: #333533;
+  background-color: #faf8d4;
+}
+
+/* background video */
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+section#teaser {
+  width: 100%;
+  height: calc(100vh + 61px);
+  margin-top: -61px;
+  position: relative;
+}
+
+section#teaser .before-teaser {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -2;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section#teaser::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div#info {
+  flex-direction: column;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  z-index: 2;
+  gap: 20px;
+}
+
+div#info i {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* about */
+#about,
+#pilih-sekarang {
+  min-height: 296px;
+}
+
+#about {
+  background-image: url("../public/ARTBOARD\ 1-01\ 2.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#about .row {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* landing calon */
+#landing-calon {
+  background-color: #faf8d4;
+}
+
+.landing-calon1 {
+  background-color: #faf8c4;
+}
+
+/* pilih sekarang */
+#pilih-sekarang {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#pilih-sekarang a {
+  width: 300px;
+}
+
+/* calon 1 */
+header#calon {
+  min-height: calc(100vh - 57.6px);
+  background-color: #faf8d4;
+}
+
+div.kotak-kosong-title {
+  width: fit-content;
+  padding: 15px;
+}
+
+#calon .container.kotak-kosong-title h1 {
+  display: inline;
+  font-size: 70px;
+}
+
+.center-list {
+  display: inline-block;
+  margin: 0px auto;
+}
+
+.center-list li {
+  text-align: left;
+}
+
+#desc-calon p,
+#desc-calon li,
+#calon .bio-calon,
+#calon ul {
+  font-size: 18px;
+}
+
+#calon table td:nth-child(1) {
+  text-align: right;
+}
+
+#calon table td:nth-child(3) {
+  text-align: left;
+}
+
+/* calon bpm */
+#calon-bpm .col {
+  border-radius: 18px;
+  background-color: #faf8d4;
+  border: 1px solid #333533;
+}
+
+.bpm-title .no-urut {
+  font-size: 30px;
+  font-weight: 600;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.no-urut {
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#calon-bpm img {
+  border-radius: 50%;
+  display: block;
+  margin: 0px auto;
+}
+
+/* guide */
+#guide .card {
+  background-color: #333533;
+  color: #faf8d4;
+}
+
+#guide .card-header-num {
+  min-height: 100%;
+  border-top-left-radius: 0.25rem;
+  background-color: #969f65;
+}
+
+/* cek */
+section#cek {
+  display: flex;
+  align-items: center;
+}
+
+.successModal .modal-content {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border-color: #badbcc;
+}
+
+#failedModal .modal-content {
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+  color: #842029;
+}
+
+/* info */
+time {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#timeline {
+  padding-bottom: 200px;
+}
+
+#timeline .judul {
+  background-color: rgba(51, 53, 51, 0.1);
+}
+
+#timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 4px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background-color: #333533;
+}
+
+#timeline ul li::after,
+#timeline ul li:nth-child(1)::before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333533;
+  z-index: 1;
+}
+
+#timeline ul li:nth-child(1)::before {
+  top: 0;
+  width: 30px;
+  height: 10px;
+  border-radius: 0%;
+}
+
+#timeline ul li div {
+  position: relative;
+  width: 400px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #333533;
+  color: #faf8d4;
+}
+
+#timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+#timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+@media (max-width: 900px) {
+  #timeline ul li div {
+    width: 250px;
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: -289px;
+  }
+}
+
+@media (max-width: 600px) {
+  #timeline ul li {
+    margin-left: 20px;
+  }
+
+  #timeline ul li div {
+    width: calc(100vw - 150px);
+    bottom: 0;
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+}
+
+/* pilih calon */
+#pilih > .container > .row > .col > .card:hover {
+  transform: scale(1.02);
+  border: 3px solid white;
+}
+
+/* hasil */
+#pieChart {
+  height: 360px;
+  width: 100%;
+}
+
+/* panit-login */
+#panit-login .container .col {
+  border-radius: 20px;
+  background-color: #c4c4c4;
+}
+
+/* tabulasi */
+#tabulasi > .container > .row > .col > .container,
+#pilih > .container > .row > .col > .card {
+  background-color: #faf8d4;
+  border-radius: 20px;
+  width: 100%;
+}
+
+#tabulasi h2 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+#tabulasi h2 span {
+  font-size: 65px;
+}
+
+#tabulasi p {
+  font-size: 16px;
+}
+
+#tabulasi a,
+#pilih button {
+  border-radius: 30px;
+  width: 120px;
+}
+
+/* lapor container & form container */
+.lapor-container .col,
+.form-container .col {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #faf8d4;
+}
+
+.lapor-container .btn,
+.form-container .btn {
+  width: 120px;
+}
+
+/* footer */
+footer {
+  min-height: 193px;
+  background-image: url("../public/BG-01\ 1.png");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  color: #faf8d4;
+  position: absolute;
+  bottom: 0;
+}
+.footer-text-container {
+  background-color: #f0f0f0; /* Background color of the rectangle */
+  padding: 20px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners for the rectangle */
+}
+
+footer .col-12 {
+  padding-bottom: 20px;
+
+}
+
+.sosmed {
+  width: 200px;
+}
+
+.fab {
+  color: #faf8d4;
+  font-size: 40px;
+  transition: 1s;
+}
+
+footer .fab:hover {
+  color: red;
+}
+
+/* warna tabel */
+.table {
+  background-color: #faf8d4;
+  border-radius: 8px;
+}
+
+/* warna card calon bpm */
+.calon-bpm {
+  background-color: #faf8d4;
+}
+

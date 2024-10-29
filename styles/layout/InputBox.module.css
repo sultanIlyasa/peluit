@@ -1,0 +1,51 @@
+.inputLabel{
+    color: #0E0E2C;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.inputBox{
+    background-color: #EEF2F5;
+    border: none;
+    padding: 12px 0px;
+    padding-left: 16px;
+    border-radius: 10px;
+}
+.inputBox:focus{
+    box-shadow: none !important;
+    border: none;
+}
+.inputBox:focus{
+    background-color: #EEF2F5;
+}
+.inputErr{
+    border: 1px solid #EF4A4A;
+}
+.messageErr{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #EF4A4A;
+    margin-top: 5px;
+}
+.showPassword{
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    margin-right: 12px;
+    margin-top: -40px;
+    z-index: 2;
+}
+.labelGroup{
+    display: flex;
+    justify-content: space-between;
+}
+.forgotPassword{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #5C5C77;
+    cursor: pointer;
+}

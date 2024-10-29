@@ -1,0 +1,64 @@
+.authForm {
+    width: 40%;
+    min-width: 360px;
+    margin: auto;
+    padding: 40px 60px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    border-radius: 16px;
+    border: 1px solid #eef2f5;
+    box-shadow: 0px 14px 22px -6px rgba(94, 94, 94, 0.08);
+  }
+  
+  @media (max-width: 960px) {
+    .authForm {
+      padding: 40px;
+    }
+  }
+  
+  .authHeader {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #262641;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .authDesc {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: #9797aa;
+    font-size: 14px;
+  }
+  .noAccount {
+    color: #4d5055;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+  }
+  .registerLink {
+    color: #6f66e4;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .authButton {
+    width: 100%;
+    padding: 12px 0px;
+    color: white;
+    border: none;
+    background-color: #ffbb3a;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 16px;
+  }
+  .kompetenLogo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .kompetenLogo img {
+    width: 125px;
+    height: auto;
+  }

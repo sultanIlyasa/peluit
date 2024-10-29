@@ -1,0 +1,8 @@
+token.json
+.env
+/node_modules
+/pdf
+/thumbnail
+exercises-tentorin-dev.json
+notes-tentorin-dev.json
+.next
